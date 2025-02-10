@@ -1,0 +1,14 @@
+@host=http://localhost:8000
+
+### Get Root Endpoint
+GET {{host}}/
+Accept: application/json
+dapr-app-id: api
+
+### Get Items List (Fixing the URL)
+GET {{host}}/get-items
+Accept: application/json
+dapr-app-id: api
+
+### save Items List (Fixing the URL)
+POST  {{host}}/save-items
